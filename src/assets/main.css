@@ -1,0 +1,47 @@
+/* src/assets/main.css */
+html {
+  /* 强制显示滚动条，避免页面切换时的晃动 */
+  overflow-y: scroll;
+  /* 或者使用 overlay 模式（如果浏览器支持） */
+  /* overflow-y: overlay; */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/image/cat.jpg) center/cover no-repeat fixed;
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox 滚动条样式 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.1);
+}
+
+/* 确保所有页面容器都有一致的处理 */
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+}
