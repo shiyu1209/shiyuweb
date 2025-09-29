@@ -1,4 +1,4 @@
-# MyWebApp
+# Shiyu Personal website project
 
 一个基于 Vue 3 + Vite 构建的现代化多功能 Web 应用，提供音乐播放、文件管理、搜索和个人资料等功能。
 
